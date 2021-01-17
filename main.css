@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 0px 100px;
+}
+body{
+    box-sizing: border-box;
+    background: #d0d0d0;
+}
+main{
+    height: 500px;
+}
+header{
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+header>p{
+    color: grey;
+}
+span>i{
+    margin-right: 5px;
+    color: cornflowerblue;
+}
+span{
+    margin-right: 10px;
+}
+.country{
+    background: white;
+    padding: 20px;
+    box-shadow: 3px 3px 5px 5px #b7b7b7;
+    margin-bottom: 25px;
+}
+.about_country{
+    line-height: 22px;
+    background: white;
+    padding: 20px;
+    box-shadow: 3px 3px 5px 5px #b7b7b7;
+    margin-bottom: 25px;
+}
+#left{
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
+.country:hover{
+    background: cornflowerblue;
+    color: white;
+}
+#uzbekistan>.img{
+    background-image: url("images/uzb.jpg");
+    height: 250px;
+    background-size: cover;
+}
+#russia>.img{
+    background-image: url("images/rus.jpg");
+    height: 250px;
+    background-size: cover;
+}
+#america>.img{
+    background-image: url("images/usa.jpg");
+    height: 250px;
+    background-size: cover;
+}
+#britan>.img{
+    background-image: url("images/uk.jpg");
+    height: 250px;
+    background-size: cover;
+}
+#france>.img{
+    background-image: url("images/france.jpg");
+    height: 250px;
+    background-size: cover;
+}
+.card{
+    margin-left: 30px;
+}
+#right{
+    float: right;
+    width: 50%;
+}
+button{
+    margin-top: 20px;
+    height: 35px;
+    width: 140px;
+    color: white;
+    background-color: cornflowerblue;
+    border: none;
+    text-align: center;
+}
+button:hover{
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bolder;
+}
