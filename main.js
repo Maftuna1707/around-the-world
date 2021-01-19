@@ -10,7 +10,6 @@ function uzb(){
     document.getElementById("uzbekistan").style.display = "block";
     document.getElementById("aboutUzb").style.background = "cornflowerblue";
     document.getElementById("aboutUzb").style.color = "white";
-    // document.getElementById("uzbekistan").style.zIndex=1000;
 }
 
 function great_britan(){
@@ -18,23 +17,18 @@ function great_britan(){
     document.getElementById("britan").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
     document.getElementById("aboutUzb").style.color = "black";
-
-    // alert("salom1");
 }
 function america(){
     a=false;
     document.getElementById("america").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
     document.getElementById("aboutUzb").style.color = "black";
-    // alert("salom2");
 }
 function france(){
     a=false;
     document.getElementById("france").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
     document.getElementById("aboutUzb").style.color = "black";
-    // alert("salom3");
-    // document.getElementById("france").style.zIndex=1000;
 }
 document.getElementById("aboutUzb").onmouseenter = function() {
     document.getElementById("uzbekistan").style.zIndex=1000;
