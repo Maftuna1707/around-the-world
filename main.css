@@ -4,17 +4,15 @@
 }
 main{
     margin: 0px 100px;
+    height: 500px;
 }
 body{
     box-sizing: border-box;
     background: #d0d0d0;
 }
-main{
-    height: 500px;
-}
 header{
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -32,14 +30,14 @@ span{
     background: white;
     padding: 20px;
     box-shadow: 3px 3px 5px 5px #b7b7b7;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .about_country{
     line-height: 22px;
     background: white;
     padding: 20px;
-    box-shadow: 3px 3px 5px 5px #b7b7b7;
     margin-bottom: 25px;
+
 }
 #left{
     float: left;
@@ -49,7 +47,9 @@ span{
 .country:hover{
     background: cornflowerblue;
     color: white;
+    cursor: pointer;
 }
+
 #uzbekistan>.img{
     background-image: url("images/uzb.jpg");
     height: 250px;
@@ -74,18 +74,23 @@ span{
     background-image: url("images/france.jpg");
     height: 250px;
     background-size: cover;
-}
-.card{
-    margin-left: 30px;
+    /*position: absolute;*/
 }
 #right{
+    position: relative;
     float: right;
     width: 50%;
+    margin-right: -20px;
+}
+.card{
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 button{
     margin-top: 20px;
-    height: 35px;
-    width: 140px;
+    height: 40px;
+    width: 150px;
     color: white;
     background-color: cornflowerblue;
     border: none;
@@ -97,4 +102,27 @@ button:hover{
     cursor: pointer;
     background-color: white;
     font-weight: bolder;
+}
+
+#aboutUzb{
+    background-color: cornflowerblue;
+    color: white;
+}
+#russia{
+    display: none;
+}
+#america{
+    display: none;
+}
+#britan{
+    display: none;
+}
+#france{
+    display: none;
+}
+/*.card{
+    position: absolute;
+}*/
+#right > div{
+    position: absolute;
 }

@@ -1,36 +1,81 @@
-let uzbekistan = document.getElementById("uzbekistan")
-let russia = document.getElementById("russia")
-let v_france = document.getElementById("france")
-let usa = document.getElementById("america")
-let uk = document.getElementById("britan")
-function uzb() {
-    document.getElementById("right").innerHTML= uzbekistan
+let a = true;
+document.getElementById("aboutRus").onclick = function(){
+    a=false;
+    document.getElementById("russia").style.display = "block";
+    document.getElementById("aboutUzb").style.background = "white";
+    document.getElementById("aboutUzb").style.color = "black";
 }
-function rus() {
-    document.getElementById("right").innerHTML=russia
+document.getElementById("aboutUzb").onclick = function(){
+    a=false;
+    document.getElementById("uzbekistan").style.display = "block";
+    document.getElementById("aboutUzb").style.background = "cornflowerblue";
+    document.getElementById("aboutUzb").style.color = "white";
+    // document.getElementById("uzbekistan").style.zIndex=1000;
 }
-function america() {
-    document.getElementById("right").innerHTML=usa
+
+document.getElementById("aboutUK").onclick = function(){
+    a=false;
+    document.getElementById("britan").style.display = "block";
+    document.getElementById("aboutUzb").style.background = "white";
+    document.getElementById("aboutUzb").style.color = "black";
+    
+    // alert("salom1");
 }
-function great_britan() {
-    document.getElementById("right").innerHTML=uk
+document.getElementById("aboutUS").onclick = function(){
+    a=false;
+    document.getElementById("america").style.display = "block";
+    document.getElementById("aboutUzb").style.background = "white";
+    document.getElementById("aboutUzb").style.color = "black";
+    // alert("salom2");
 }
-function france() {
-    document.getElementById("right").innerHTML=v_france
+document.getElementById("aboutFr").onclick = function(){
+    a=false;
+    document.getElementById("france").style.display = "block";
+    document.getElementById("aboutUzb").style.background = "white";
+    document.getElementById("aboutUzb").style.color = "black";
+    // alert("salom3");
+    // document.getElementById("france").style.zIndex=1000;
 }
 document.getElementById("aboutUzb").onmouseenter = function() {
-    document.getElementById("right").innerHTML=uzbekistan
+    document.getElementById("uzbekistan").style.zIndex=1000;
+    document.getElementById("uzbekistan").style.display = "block"
+    document.getElementById("aboutUzb").style.background = "cornflowerblue";
+    document.getElementById("aboutUzb").style.color = "white";
 }
 document.getElementById("aboutRus").onmouseenter = function() {
-    document.getElementById("right").innerHTML=russia
+    document.getElementById("russia").style.zIndex=1000;
+    document.getElementById("russia").style.display = "block"
+}
+document.getElementById("aboutRus").onmouseleave = function() {
+    if(a){
+    document.getElementById("russia").style.display = "none"
+}
 }
 document.getElementById("aboutUK").onmouseenter = function() {
-    document.getElementById("right").innerHTML=uk
+    document.getElementById("britan").style.display= "blocked"
+    document.getElementById("britan").style.zIndex=1000;
 }
-document.getElementById("aboutUSA").onmouseenter = function() {
-    document.getElementById("right").innerHTML=usa
+document.getElementById("aboutUK").onmouseleave = function() {
+    if(a){
+    document.getElementById("britan").style.display= "none"
+    }
+}
+document.getElementById("aboutUS").onmouseenter = function() {
+    document.getElementById("america").style.display= "blocked"
+    document.getElementById("america").style.zIndex=1000;
+}
+document.getElementById("aboutUS").onmouseleave = function() {
+    if(a){
+    document.getElementById("america").style.display= "none"
+    }
 }
 document.getElementById("aboutFr").onmouseenter = function() {
-    document.getElementById("right").innerHTML=v_france
+    document.getElementById("france").style.display= "blocked"
+    document.getElementById("france").style.zIndex=1000;
+}
+document.getElementById("aboutFr").onmouseleave = function() {
+    if(a){
+    document.getElementById("france").style.display= "none"
+    }
 }
 
