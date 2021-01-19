@@ -1,11 +1,11 @@
 let a = true;
-document.getElementById("aboutRus").onclick = function(){
+function rus(){
     a=false;
     document.getElementById("russia").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
     document.getElementById("aboutUzb").style.color = "black";
 }
-document.getElementById("aboutUzb").onclick = function(){
+function uzb(){
     a=false;
     document.getElementById("uzbekistan").style.display = "block";
     document.getElementById("aboutUzb").style.background = "cornflowerblue";
@@ -13,7 +13,7 @@ document.getElementById("aboutUzb").onclick = function(){
     // document.getElementById("uzbekistan").style.zIndex=1000;
 }
 
-document.getElementById("aboutUK").onclick = function(){
+function great_britan(){
     a=false;
     document.getElementById("britan").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
@@ -21,14 +21,14 @@ document.getElementById("aboutUK").onclick = function(){
 
     // alert("salom1");
 }
-document.getElementById("aboutUS").onclick = function(){
+function america(){
     a=false;
     document.getElementById("america").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
     document.getElementById("aboutUzb").style.color = "black";
     // alert("salom2");
 }
-document.getElementById("aboutFr").onclick = function(){
+function france(){
     a=false;
     document.getElementById("france").style.display = "block";
     document.getElementById("aboutUzb").style.background = "white";
