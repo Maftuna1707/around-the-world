@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     background: #d0d0d0;
 }
+<<<<<<< HEAD
 header{
     line-height: 20px;
     margin-top: 40px;
@@ -137,6 +138,8 @@ body{
     box-sizing: border-box;
     background: #d0d0d0;
 }
+=======
+>>>>>>> fb01ec66e7dc4ea1b5823f68bf90f1a85733a9d4
 header{
     line-height: 20px;
     margin-top: 40px;
