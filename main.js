@@ -1,9 +1,11 @@
-var block = document.getElementsByClassName('box')
-var box = document.getElementsByClassName('block')
+let block = document.getElementsByClassName('box')
+let box = document.getElementsByClassName('block')
 console.log(block, box)
 let a = box[0]
 a.classList.add("opacity")
 block[0].onmouseenter = function() {
+    document.getElementById("first").style.background="#48b1d1c9"
+    document.getElementById("first").style.color="white"
     box[0].classList.add("opacity")
     box[3].classList.remove("opacity")
     box[2].classList.remove("opacity")
@@ -19,8 +21,6 @@ block[0].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[0].onclick = function() {
-    document.getElementById("first").style.background="white"
-    document.getElementById("first").style.color="black"
     box[0].classList.add("opacity")
     box[3].classList.remove("opacity")
     box[2].classList.remove("opacity")
@@ -29,6 +29,7 @@ block[0].onclick = function() {
     a = box[0]
 }
 block[1].onmouseenter = function() {
+
     box[1].classList.add("opacity")
     box[4].classList.remove("opacity")
     box[2].classList.remove("opacity")

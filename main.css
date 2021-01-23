@@ -118,6 +118,10 @@ img{
     background-color: #48b1d1c9;
     color: white;
 }
+.one:hover{
+    background-color: #48b1d1c9;
+    color: white;
+}
 footer{
     text-align: center;
     height: 200px;
