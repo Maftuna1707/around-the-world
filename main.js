@@ -19,6 +19,8 @@ block[0].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[0].onclick = function() {
+    document.getElementById("first").style.background="white"
+    document.getElementById("first").style.color="black"
     box[0].classList.add("opacity")
     box[3].classList.remove("opacity")
     box[2].classList.remove("opacity")
@@ -42,6 +44,8 @@ block[1].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[1].onclick = function() {
+    document.getElementById("first").style.background="white"
+    document.getElementById("first").style.color="black"
     box[1].classList.add("opacity")
     box[4].classList.remove("opacity")
     box[2].classList.remove("opacity")
@@ -65,6 +69,8 @@ block[2].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[2].onclick = function() {
+    document.getElementById("first").style.background="white"
+    document.getElementById("first").style.color="black"
     box[2].classList.add("opacity")
     box[4].classList.remove("opacity")
     box[3].classList.remove("opacity")
@@ -88,6 +94,8 @@ block[3].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[3].onclick = function() {
+    document.getElementById("first").style.background="white"
+    document.getElementById("first").style.color="black"
     box[3].classList.add("opacity")
     box[4].classList.remove("opacity")
     box[1].classList.remove("opacity")
@@ -111,6 +119,8 @@ block[4].onmouseleave = function() {
     a.classList.add("opacity")
 }
 block[4].onclick = function() {
+    document.getElementById("first").style.background="white"
+    document.getElementById("first").style.color="black"
     box[4].classList.add("opacity")
     box[0].classList.remove("opacity")
     box[3].classList.remove("opacity")

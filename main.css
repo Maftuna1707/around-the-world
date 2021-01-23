@@ -54,6 +54,7 @@ body{
 i {
     margin: 5px;
     margin-left: 0;
+    color: cornflowerblue;
 }
 img{
     top: 16.2%;
@@ -108,4 +109,8 @@ img{
 }
 #right{
     margin-right: 150px;
+}
+.one{
+    background-color: #48b1d1c9;
+    color: white;
 }
