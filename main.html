@@ -1,136 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-<header><h1>Our blog entries</h1><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ducimus er-<br>
-        ror vel. Explicabo laborum laudantium neque nisi, non perspiciatis ullam!</p>
-</header>
-<main>
-    <section id="left">
-        <div class="country" id="aboutUzb" onclick="uzb()"><h2>About Uzbekistan</h2>
-            <span><i class="fa fa-user"></i> Admin</span>
-            <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-            <span><i class="fa fa-comments"></i>Comments</span>
+<div class="container">
+    <div class="header">
+        <h1 class="header-title">Our blog entries facts about countries</h1>
+        <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius est fugiat ipsam, quae sit voluptatibus?</p>
+    </div>
+    <section class="left">
+        <div class="box one" id="bir">
+            <p class="boxtext">
+                About Uzbekistan
+            </p>
+            <div class="boxinform">
+                    <span class="inform">
+                      <i class="fas fa-user"></i>Ma`mura
+                    </span>
+                <span class="inform">
+                       <i class="fas fa-calendar-alt"></i>14 November 2020
+                  </span>
+                <span class="inform">
+                      <i class="fas fa-comment-dots"></i>12 Comments
+                  </span>
+            </div>
         </div>
-        <div class="country" id="aboutRus" onclick="rus()"><h2>About Russia</h2>
-            <span><i class="fa fa-user"></i> Admin</span>
-            <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-            <span><i class="fa fa-comments"></i>Comments</span>
+
+        <div class="box two" id="ikki">
+            <p class="boxtext">
+                About Russia
+            </p>
+            <div class="boxinform">
+                <span class="inform">
+                  <i class="fas fa-user"></i>Zumrad
+                </span>
+                <span class="inform">
+                  <i class="fas fa-calendar-alt"></i>08 November 2020
+                </span>
+                <span class="inform"><i class="fas fa-comment-dots"></i>19 Comments</span>
+            </div>
         </div>
-        <div class="country" id="aboutUS" onclick="america()"><h2>About America</h2>
-            <span><i class="fa fa-user"></i> Admin</span>
-            <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-            <span><i class="fa fa-comments"></i>Comments</span>
+
+        <div class="box three" id="uch">
+            <p class="boxtext">
+                About America
+            </p>
+            <div class="boxinform">
+                <span class="inform"><i class="fas fa-user"></i>Maftuna</span>
+                <span class="inform"><i class="fas fa-calendar-alt"></i>02 November 2020</span>
+                <span class="inform"><i class="fas fa-comment-dots"></i>9 Comments</span>
+            </div>
         </div>
-        <div class="country" id="aboutUK" onclick="great_britan()"><h2>About Great Britan</h2>
-            <span><i class="fa fa-user"></i> Admin</span>
-            <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-            <span><i class="fa fa-comments"></i>Comments</span>
+
+        <div class="box four" id="tort">
+            <p class="boxtext">
+                About Great Britan
+            </p>
+            <div class="boxinform">
+                <span class="inform"><i class="fas fa-user"></i>Charos</span>
+                <span class="inform"><i class="fas fa-calendar-alt"></i>28 October 2020</span>
+                <span class="inform"><i class="fas fa-comment-dots"></i>11 Comments</span>
+            </div>
         </div>
-        <div class="country" id="aboutFr" onclick="france()"><h2>About France</h2>
-            <span><i class="fa fa-user"></i> Admin</span>
-            <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-            <span><i class="fa fa-comments"></i>Comments</span>
+
+        <div class="box five" id="besh">
+            <p class="boxtext">
+                About France
+            </p>
+            <div class="boxinform">
+                <span class="inform"><i class="fas fa-user"></i>Nodira</span>
+                <span class="inform"><i class="fas fa-calendar-alt"></i>22 October 2020</span>
+                <span class="inform"><i class="fas fa-comment-dots"></i>24 Comments</span>
+            </div>
         </div>
     </section>
-    <section id="right">
-        <div class="card" id="uzbekistan">
-            <div class="img"></div>
-            <div class="about">
-                <div class="about_country"><h2>About Uzbekistan</h2><br>
-                    <span><i class="fa fa-user"></i> Admin</span>
-                    <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-                    <span><i class="fa fa-comments"></i>Comments</span><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci alias asperiores assumenda atque aut beatae
-                        cumque dolor dolorem enim esse exercitationem fuga
-                        fugiat illo illum in itaque laudantium, magnam molestias
-                        mollitia nemo nesciunt odit perferendis perspiciatis
-                        placeat porro quas quasi recusandae tenetur totam
-                        voluptas. Aperiam ducimus eos nesciunt repellat saepe..</p>
-                    <button>CONTINUE READING</button>
+
+    <section class="right">
+        <div id="condition" class="block">
+            <img class="img-js" id="firstImage" src="images/uzb.jpg" alt="" width="500px" height="300px" class="hidden">
+            <div class="fact">
+                <p class="boxtext">
+                    About Uzbekistan
+                </p>
+                <div class="boxinform">
+                    <span class="inform"><i class="fas fa-user"></i>Ma`mura</span>
+                    <span class="inform"><i class="fas fa-calendar-alt"></i>14 November 2020</span>
+                    <span class="inform"><i class="fas fa-comment-dots"></i>12 Comments</span>
                 </div>
-            </div></div>
+                <div class="box-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat tempore, eos quia minus iusto error ex culpa nihil provident,
+                    hic voluptates beatae fugit voluptatibus quibusdam excepturi incidunt at.
+                    Molestiae, quasi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium dignissimos fugiat reiciendis architecto delectus
+                    ex porro accusantium eos est temporibus,
+                    non doloribus id eum laborum, sed soluta consequatur! Id, amet.
+                </div>
+                <a href="#"><button class="btn"> Countinue reading</button></a>
+            </div>
+
         </div>
-        <div class="card" id="russia">
-            <div class="img"></div>
-            <div class="about">
-                <div class="about_country"><h2>About Russia</h2><br>
-                    <span><i class="fa fa-user"></i> Admin</span>
-                    <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-                    <span><i class="fa fa-comments"></i>Comments</span><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci alias asperiores assumenda atque aut beatae
-                        cumque dolor dolorem enim esse exercitationem fuga
-                        fugiat illo illum in itaque laudantium, magnam molestias
-                        mollitia nemo nesciunt odit perferendis perspiciatis
-                        placeat porro quas quasi recusandae tenetur totam
-                        voluptas. Aperiam ducimus eos nesciunt repellat saepe..</p>
-                    <button>CONTINUE READING</button>
-                </div></div></div>
+
+        <div id="loop" class="block">
+            <img class="img-js" id="secondImage" src="images/rus.jpg" alt="" width="500px" height="300px" class="hidden">
+            <div class="fact">
+                <p class="boxtext">
+                    About Russia
+                </p>
+                <div class="boxinform">
+                    <span class="inform"><i class="fas fa-user"></i>Zumrad</span>
+                    <span class="inform"><i class="fas fa-calendar-alt"></i>08 November 2020</span>
+                    <span class="inform"><i class="fas fa-comment-dots"></i>19 Comments</span>
+                </div>
+                <div class="box-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat tempore, eos quia minus iusto error ex culpa nihil provident,
+                    hic voluptates beatae fugit voluptatibus quibusdam excepturi incidunt at.
+                    Molestiae, quasi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium dignissimos fugiat reiciendis architecto delectus
+                    ex porro accusantium eos est temporibus,
+                    non doloribus id eum laborum, sed soluta consequatur! Id, amet.
+                </div>
+                <button class="btn"> Countinue reading</button>
+            </div>
         </div>
-        <div class="card" id="america">
-            <div class="img"></div>
-            <div class="about">
-                <div class="about_country"><h2>About America</h2><br>
-                    <span><i class="fa fa-user"></i> Admin</span>
-                    <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-                    <span><i class="fa fa-comments"></i>Comments</span><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci alias asperiores assumenda atque aut beatae
-                        cumque dolor dolorem enim esse exercitationem fuga
-                        fugiat illo illum in itaque laudantium, magnam molestias
-                        mollitia nemo nesciunt odit perferendis perspiciatis
-                        placeat porro quas quasi recusandae tenetur totam
-                        voluptas. Aperiam ducimus eos nesciunt repellat saepe..</p>
-                    <button>CONTINUE READING</button>
-                </div></div></div>
+
+        <div id="functionjs" class="block">
+            <img class="img-js" id="thirdImage" src="images/usa.jpg" alt="" width="500px" height="300px" class="hidden">
+            <div class="fact">
+                <p class="boxtext">
+                    About America
+                </p>
+                <div class="boxinform">
+                    <span class="inform"><i class="fas fa-user"></i>Maftuna</span>
+                    <span class="inform"><i class="fas fa-calendar-alt"></i>02 November 2020</span>
+                    <span class="inform"><i class="fas fa-comment-dots"></i>9 Comments</span>
+                </div>
+                <div class="box-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat tempore, eos quia minus iusto error ex culpa nihil provident,
+                    hic voluptates beatae fugit voluptatibus quibusdam excepturi incidunt at.
+                    Molestiae, quasi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium dignissimos fugiat reiciendis architecto delectus
+                    ex porro accusantium eos est temporibus,
+                    non doloribus id eum laborum, sed soluta consequatur! Id, amet.
+                </div>
+                <a href="#"><button class="btn"> Countinue reading</button></a>
+
+            </div>
         </div>
-        <div class="card" id="britan">
-            <div class="img"></div>
-            <div class="about">
-                <div class="about_country"><h2>About Great Britan</h2><br>
-                    <span><i class="fa fa-user"></i> Admin</span>
-                    <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-                    <span><i class="fa fa-comments"></i>Comments</span><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci alias asperiores assumenda atque aut beatae
-                        cumque dolor dolorem enim esse exercitationem fuga
-                        fugiat illo illum in itaque laudantium, magnam molestias
-                        mollitia nemo nesciunt odit perferendis perspiciatis
-                        placeat porro quas quasi recusandae tenetur totam
-                        voluptas. Aperiam ducimus eos nesciunt repellat saepe..</p>
-                    <button>CONTINUE READING</button>
-                </div></div></div>
+
+        <div id="object" class="block">
+            <img class="img-js" id="fourthImage" src="images/uk.jpg" alt="" width="500px" height="300px" class="hidden">
+            <div class="fact">
+                <p class="boxtext">
+                    JavaScriptda object bilan ishlash
+                </p>
+                <div class="boxinform">
+                    <span class="inform"><i class="fas fa-user"></i>Charos</span>
+                    <span class="inform"><i class="fas fa-calendar-alt"></i>28 October 2020</span>
+                    <span class="inform"><i class="fas fa-comment-dots"></i>11 Comments</span>
+                </div>
+                <div class="box-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat tempore, eos quia minus iusto error ex culpa nihil provident,
+                    hic voluptates beatae fugit voluptatibus quibusdam excepturi incidunt at.
+                    Molestiae, quasi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium dignissimos fugiat reiciendis architecto delectus
+                    ex porro accusantium eos est temporibus,
+                    non doloribus id eum laborum, sed soluta consequatur! Id, amet.
+                </div>
+                <a href="#"><button class="btn"> Countinue reading</button></a>
+            </div>
+
         </div>
-        <div class="card" id="france">
-            <div class="img"></div>
-            <div class="about">
-                <div class="about_country"><h2>About France</h2><br>
-                    <span><i class="fa fa-user"></i> Admin</span>
-                    <span><i class="fa fa-calendar"></i> 22 October 2020</span>
-                    <span><i class="fa fa-comments"></i>Comments</span><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Adipisci alias asperiores assumenda atque aut beatae
-                        cumque dolor dolorem enim esse exercitationem fuga
-                        fugiat illo illum in itaque laudantium, magnam molestias
-                        mollitia nemo nesciunt odit perferendis perspiciatis
-                        placeat porro quas quasi recusandae tenetur totam
-                        voluptas. Aperiam ducimus eos nesciunt repellat saepe..</p>
-                    <button>CONTINUE READING</button>
-                </div></div></div>
-        </div>
-        </div>
+
+        <div id="array" class="block">
+            <img class="img-js" id="fifthImage" src="images/france.jpg" alt="JS" width="500px" height="300px" class="hidden">
+            <div class="fact">
+                <p class="boxtext">
+                    About France
+                </p>
+                <div class="boxinform">
+                    <span class="inform"><i class="fas fa-user"></i>Nodira</span>
+                    <span class="inform"><i class="fas fa-calendar-alt"></i>22 October 2020</span>
+                    <span class="inform"><i class="fas fa-comment-dots"></i>24 Comments</span>
+                </div>
+                <div class="box-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat tempore, eos quia minus iusto error ex culpa nihil provident,
+                    hic voluptates beatae fugit voluptatibus quibusdam excepturi incidunt at.
+                    Molestiae, quasi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium dignissimos fugiat reiciendis architecto delectus
+                    ex porro accusantium eos est temporibus,
+                    non doloribus id eum laborum, sed soluta consequatur! Id, amet.
+                </div>
+                <a href="#"><button class="btn"> Countinue reading</button></a>
+            </div>
+
         </div>
     </section>
-</main>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

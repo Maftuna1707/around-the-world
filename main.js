@@ -1,75 +1,120 @@
-let a = true;
-function rus(){
-    a=false;
-    document.getElementById("russia").style.display = "block";
-    document.getElementById("aboutUzb").style.background = "white";
-    document.getElementById("aboutUzb").style.color = "black";
+var block = document.getElementsByClassName('box')
+var box = document.getElementsByClassName('block')
+console.log(block, box)
+let a = box[0]
+a.classList.add("opacity")
+block[0].onmouseenter = function() {
+    box[0].classList.add("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[4].classList.remove("opacity")
 }
-function uzb(){
-    a=false;
-    document.getElementById("uzbekistan").style.display = "block";
-    document.getElementById("aboutUzb").style.background = "cornflowerblue";
-    document.getElementById("aboutUzb").style.color = "white";
+block[0].onmouseleave = function() {
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a.classList.add("opacity")
 }
-
-function great_britan(){
-    a=false;
-    document.getElementById("britan").style.display = "block";
-    document.getElementById("aboutUzb").style.background = "white";
-    document.getElementById("aboutUzb").style.color = "black";
+block[0].onclick = function() {
+    box[0].classList.add("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[4].classList.remove("opacity")
+    a = box[0]
 }
-function america(){
-    a=false;
-    document.getElementById("america").style.display = "block";
-    document.getElementById("aboutUzb").style.background = "white";
-    document.getElementById("aboutUzb").style.color = "black";
+block[1].onmouseenter = function() {
+    box[1].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[0].classList.remove("opacity")
 }
-function france(){
-    a=false;
-    document.getElementById("france").style.display = "block";
-    document.getElementById("aboutUzb").style.background = "white";
-    document.getElementById("aboutUzb").style.color = "black";
+block[1].onmouseleave = function() {
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a.classList.add("opacity")
 }
-document.getElementById("aboutUzb").onmouseenter = function() {
-    document.getElementById("uzbekistan").style.zIndex=1000;
-    document.getElementById("uzbekistan").style.display = "block"
-    document.getElementById("aboutUzb").style.background = "cornflowerblue";
-    document.getElementById("aboutUzb").style.color = "white";
+block[1].onclick = function() {
+    box[1].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a = box[1]
 }
-document.getElementById("aboutRus").onmouseenter = function() {
-    document.getElementById("russia").style.zIndex=1000;
-    document.getElementById("russia").style.display = "block"
+block[2].onmouseenter = function() {
+    box[2].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    box[3].classList.remove("opacity")
 }
-document.getElementById("aboutRus").onmouseleave = function() {
-    if(a){
-        document.getElementById("russia").style.display = "none"
-    }
+block[2].onmouseleave = function() {
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a.classList.add("opacity")
 }
-document.getElementById("aboutUK").onmouseenter = function() {
-    document.getElementById("britan").style.display= "blocked"
-    document.getElementById("britan").style.zIndex=1000;
+block[2].onclick = function() {
+    box[2].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a = box[2]
 }
-document.getElementById("aboutUK").onmouseleave = function() {
-    if(a){
-        document.getElementById("britan").style.display= "none"
-    }
+block[3].onmouseenter = function() {
+    box[3].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    box[1].classList.remove("opacity")
 }
-document.getElementById("aboutUS").onmouseenter = function() {
-    document.getElementById("america").style.display= "blocked"
-    document.getElementById("america").style.zIndex=1000;
+block[3].onmouseleave = function() {
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a.classList.add("opacity")
 }
-document.getElementById("aboutUS").onmouseleave = function() {
-    if(a){
-        document.getElementById("america").style.display= "none"
-    }
+block[3].onclick = function() {
+    box[3].classList.add("opacity")
+    box[4].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a = box[3]
 }
-document.getElementById("aboutFr").onmouseenter = function() {
-    document.getElementById("france").style.display= "blocked"
-    document.getElementById("france").style.zIndex=1000;
+block[4].onmouseenter = function() {
+    box[4].classList.add("opacity")
+    box[0].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[3].classList.remove("opacity")
 }
-document.getElementById("aboutFr").onmouseleave = function() {
-    if(a){
-        document.getElementById("france").style.display= "none"
-    }
+block[4].onmouseleave = function() {
+    box[4].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[0].classList.remove("opacity")
+    a.classList.add("opacity")
 }
-
+block[4].onclick = function() {
+    box[4].classList.add("opacity")
+    box[0].classList.remove("opacity")
+    box[3].classList.remove("opacity")
+    box[1].classList.remove("opacity")
+    box[2].classList.remove("opacity")
+    a = box[4]
+}

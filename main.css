@@ -1,128 +1,111 @@
 *{
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
-}
-main{
-    margin: 0px 100px;
-    height: 500px;
+    margin: 0;
 }
 body{
-    box-sizing: border-box;
-    background: #d0d0d0;
-}
-header{
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-header>p{
-    color: grey;
-}
-span>i{
-    margin-right: 5px;
-    color: cornflowerblue;
-}
-span{
-    margin-right: 10px;
-}
-.country{
-    background: white;
-    padding: 20px;
-    box-shadow: 3px 3px 5px 5px #b7b7b7;
-    margin-bottom: 30px;
-}
-.about_country{
-    line-height: 22px;
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
+    background-color: rgba(69, 69, 69, 0.19);
 
 }
-#left{
-    float: left;
-    margin-right: 20px;
-    width: 50%;
+.header{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 450px;
 }
-.country:hover{
-    background: cornflowerblue;
-    color: white;
+.header-title{
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.header-text{
+    color: gray;
+}
+
+.left{
+    width: 800px;
+    padding: 20px 100px;
+    margin-left: 50px;
+}
+.box{
+    background-color: #fff;
+    margin: 30px;
+    padding: 20px;
+
+}
+.boxtext{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+}
+.box:hover{
+    background-color: #48b1d1c9;
+    color: #fff;
     cursor: pointer;
 }
+.boxinform{
+    margin-left: 5px;
+}
+.inform{
+    margin-right: 15px;
+}
+i {
+    margin: 5px;
+    margin-left: 0;
+}
+img{
+    top: 16.2%;
+    left: 47.5%;
+    position: absolute;
+}
+.aboutbox{
+    width: 480px;
+    float: right;
+    top: 47%;
+    left: 48%;
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+}
+.box-about{
+    margin: 15px 0;
+    color: gray;
+}
+.btn{
+    background-color: #48b1d1c9;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.opacity{
+    opacity: 1 !important
+}
 
-#uzbekistan>.img{
-    background-image: url("images/uzb.jpg");
-    height: 250px;
-    background-size: cover;
+.img-js{
+    top: 26.5%;
+    left: 55%;
+    position: absolute;
 }
-#russia>.img{
-    background-image: url("images/rus.jpg");
-    height: 250px;
-    background-size: cover;
+.fact{
+    position: absolute;
+    top: 67%;
+    left: 56.1%;
+    background-color: #fff;
+    width: 470px;
+    padding: 23px;
 }
-#america>.img{
-    background-image: url("images/usa.jpg");
-    height: 250px;
-    background-size: cover;
+#condition{
+    display: block
 }
-#britan>.img{
-    background-image: url("images/uk.jpg");
-    height: 250px;
-    background-size: cover;
-}
-#france>.img{
-    background-image: url("images/france.jpg");
-    height: 250px;
-    background-size: cover;
-    /*position: absolute;*/
+.block{
+    opacity: 0
 }
 #right{
-    position: relative;
-    float: right;
-    width: 50%;
-    margin-right: -20px;
-}
-.card{
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-button{
-    margin-top: 20px;
-    height: 40px;
-    width: 150px;
-    color: white;
-    background-color: cornflowerblue;
-    border: none;
-    text-align: center;
-}
-button:hover{
-    border: 2px solid cornflowerblue;
-    color: cornflowerblue;
-    cursor: pointer;
-    background-color: white;
-    font-weight: bolder;
-}
-
-#aboutUzb{
-    background-color: cornflowerblue;
-    color: white;
-}
-#russia{
-    display: none;
-}
-#america{
-    display: none;
-}
-#britan{
-    display: none;
-}
-#france{
-    display: none;
-}
-/*.card{
-    position: absolute;
-}*/
-#right > div{
-    position: absolute;
+    margin-right: 150px;
 }
