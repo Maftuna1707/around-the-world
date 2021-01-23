@@ -129,7 +129,28 @@ footer{
 }
 footer>p{
     margin-top: 50px;
-    font-size: 26px;
+        font-size: 26px;
     color: white;
     padding-top: 80px;
+}
+@media screen and (max-width: 1320px){
+
+    .left{
+        width: 800px;
+        padding: 20px 100px;
+        margin-left: 0px;
+    }
+    .fact{
+        border-radius: 5px;
+        position: absolute;
+        top: 95%;
+        left: 56.3%;
+        background-color: #fff;
+        width: 520px;
+        padding: 23px;
+    }
+    .img-js{
+        width: 550px;
+        top: 38%;
+    }
 }
